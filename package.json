@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "maestro": "set -a && . ./.env && set +a && maestro test -e PROD_URL=\"$PROD_URL\" -e VALID_USERNAME=\"$VALID_USERNAME\" -e UNIVERSAL_PASSWORD=\"$UNIVERSAL_PASSWORD\" test/user_login/user_login.yaml"
+    "maestro": "set -a && . ./.env && set +a && maestro test -e PROD_URL=\"$PROD_URL\" -e VALID_USERNAME=\"$VALID_USERNAME\" -e UNIVERSAL_PASSWORD=\"$UNIVERSAL_PASSWORD\" test/user_login/web/user_login.yaml"
   },
   "dependencies": {
     "chromedriver": "^154.0.1"
