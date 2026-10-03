@@ -1,0 +1,9 @@
+url: ${PROD_URL}
+---
+- launchApp
+- tapOn: "Username"
+- inputText: "invalid_user"
+- tapOn: "Password"
+- inputText: ${UNIVERSAL_PASSWORD}
+- tapOn: "Login"
+- assertVisible: "Epic sadface: Username and password do not match any user in this service"

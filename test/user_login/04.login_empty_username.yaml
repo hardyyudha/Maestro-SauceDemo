@@ -1,0 +1,9 @@
+url: ${PROD_URL}
+---
+- launchApp
+- tapOn: "Username"
+- inputText: ""
+- tapOn: "Password"
+- inputText: ${UNIVERSAL_PASSWORD}
+- tapOn: "Login"
+- assertVisible: "Epic sadface: Username is required"
