@@ -1,0 +1,8 @@
+appId: com.android.chrome
+---
+- runFlow: "01.login_valid_credential.yaml"
+- runFlow: "02.login_invalid_username.yaml"
+- runFlow: "03.login_invalid_password.yaml"
+- runFlow: "04.login_empty_username.yaml"
+- runFlow: "05.login_empty_password.yaml"
+- runFlow: "06.login_empty_field.yaml"

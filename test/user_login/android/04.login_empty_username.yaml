@@ -1,0 +1,9 @@
+appId: com.android.chrome
+---
+- runFlow: "open_saucedemo.yaml"
+- tapOn: "Username"
+- inputText: ""
+- tapOn: "Password"
+- inputText: ${UNIVERSAL_PASSWORD}
+- tapOn: "Login"
+- assertVisible: "Epic sadface: Username is required"

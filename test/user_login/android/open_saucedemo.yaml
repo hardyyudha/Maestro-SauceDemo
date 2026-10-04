@@ -1,0 +1,9 @@
+appId: com.android.chrome
+---
+- launchApp:
+    clearState: true
+- tapOn: "Use without an account"
+- tapOn: "Got it"
+- tapOn: "Search or type URL"
+- inputText: ${PROD_URL}
+- pressKey: enter
